@@ -82,18 +82,22 @@ void load()
 		int j = 0;
 		int k = 0;
 
-		do {
+		do
+		{
 			filein >> inMatrix;
 
-			if (!filein.fail()) {
+			if (!filein.fail()) 
+			{
 				matrix[i][j][k] = std::stoi(inMatrix);
 				i++;
 
-				if (i > 4) {
+				if (i > 4) 
+				{
 					i = 0;
 					k++;
 				}
-				if (k > 4) {
+				if (k > 4) 
+				{
 					k = 0;
 					j++;
 				}
